@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora con jQuery</title>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+ 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Calculadora</h1>
+
+   
+    <div class="row">
+      <input type="number" id="num1" placeholder="Número 1">
+      <select id="operacion">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" id="num2" placeholder="Número 2">
+    </div>
+
+    <button id="btnCalcular">Calcular</button>
+
+    
+    <div id="resultado"></div>
+
+    <div class="historial-header">
+      <strong>Historial</strong>
+      <button id="btnLimpiar">Limpiar historial</button>
+    </div>
+    <ul id="historial"></ul>
+  </div>
+
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
