@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EX1 - Directorio de Usuarios</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Directorio de Usuarios</h1>
+
+        <section class="buscador">
+            <label for="filtro">Buscar usuario por nombre:</label>
+
+            <input
+                type="text"
+                id="filtro"
+                placeholder="Escribe un nombre..."
+            >
+        </section>
+
+        <p id="resultadoFiltro"></p>
+
+        <section class="tabla-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Empresa</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaUsuarios">
+                    <!-- Los usuarios se cargarán aquí -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="detalleUsuario" class="detalle oculto">
+
+            <div class="detalle-header">
+                <h2>Detalle del usuario</h2>
+
+                <button id="cerrarDetalle">
+                    Cerrar
+                </button>
+            </div>
+
+            <div class="detalle-contenido">
+                <h3 id="detalleNombre"></h3>
+
+                <p>
+                    <strong>Teléfono:</strong>
+                    <span id="detalleTelefono"></span>
+                </p>
+
+                <p>
+                    <strong>Dirección:</strong>
+                    <span id="detalleDireccion"></span>
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
