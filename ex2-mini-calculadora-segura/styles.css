@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  margin: 0;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px;
+  width: 100%;
+  max-width: 420px;
+}
+h1 { font-size: 1.3rem; margin-top: 0; text-align: center; }
+.row { display: flex; gap: 8px; margin-bottom: 12px; }
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+input { flex: 1; min-width: 0; }
+select { flex: 0 0 90px; }
+button {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover { background: #1d4ed8; }
+#resultado {
+  margin-top: 16px;
+  min-height: 24px;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+#resultado.error { color: #dc2626; }
+#resultado.ok { color: #16a34a; }
+.historial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+#btnLimpiar {
+  width: auto;
+  background: #e5e7eb;
+  color: #333;
+  font-weight: normal;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+#btnLimpiar:hover { background: #d1d5db; }
+#historial {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+#historial li {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+#historial li .fecha {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 2px;
+}
